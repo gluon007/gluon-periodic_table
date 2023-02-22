@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Periodic Table</title>
+	<style>
+        body {
+            background-color: #0f0f0f;
+            border-left-color: #cd78e7;
+			text-decoration: white;
+            font-family: 'Courier New', Courier, monospace;
+			
+		} 
+		table {
+			color: #c2b2b2;
+			margin: 0 auto;
+			font-size: 1.2em;
+			width: 10%;
+			max-width: 1000px;
+			text-align: center;
+		}
+		td {
+			border: 0px solid #ccc;
+			padding: 10px;
+			position: relative;
+            border-radius: 10px;
+		}
+		td:hover::before {
+			content: attr(data-tooltip);
+			position: absolute;
+			bottom: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+			padding: 10px;
+			background: rgba(0, 0, 0, 0.726);
+			color: #fff;
+			border-radius: 4px;
+			white-space: pre-wrap;
+			z-index: 1;
+		}
+		.alkali-metals, .alkaline-earth-metals, .transition-metals, .other-metals, .metalloids, .nonmetals, .halogens, .noble-gases, .lanthanides, .actinides, .post-transition-metals {
+			background-color: #f1f1f1;
+			font-weight: bold;
+			color: #070606;
+		}
+		.alkali-metals {
+			background-color: #2d9b49;
+		}
+		.alkaline-earth-metals {
+			background-color: #23e91c;
+		}
+		.transition-metals {
+			background-color: #e6af51bb;
+		}
+		.metalloids {
+			background-color: #413ed4;
+		}
+		.nonmetals {
+			background-color: #d17c7c;
+		}
+		.halogens {
+			background-color: #c93434;
+		}
+		.noble-gases {
+			background-color: #7bbcfd;
+		}
+		.post-transition-metals{
+			background-color: rgb(248, 143, 68);
+		}
+		.lanthanides{
+			background-color: #a56e4e;
+		}
+		.actinides {
+			background-color: #c45555;
+		}
+		.empty {
+			background-color: #fff;
+			border: none;
+		}
+		a{
+			color:#070606;
+		}
+	</style>
+</head>
+<body>
+    <div style="height:50px; background-color: #cd78e7; border-radius:30px; text-align: center; width: 90%; margin:0 auto;">
+        <h1><u>PERIODIC TABLE</u></h1>
+    </div>
+    <div style="color: #ffffff; background-color: #32323b; border-radius: 30px; height:20px; width: 75%; margin:0 auto;"><nav></nav></div>
+	<div>
+	<table>
+		<thead>
+			<tr>
+				<th></th>
+				<th>1</th>
+				<th>2</th>
+				<th>3</th>
+				<th>4</th>
+				<th>5</th>
+				<th>6</th>
+				<th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+                <th>11</th>
+                <th>12</th>
+                <th>13</th>
+                <th>14</th>
+                <th>15</th>
+                <th>16</th>
+                <th>17</th>
+                <th>18</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td class="nonmetals" data-tooltip="Hydrogen [H] Atomic number 1">H</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td class="noble-gases" data-tooltip="Helium [He] Atomic number 2">He</td>
+            </tr>
+            <tr>
+                <td>2</td>
+				<!--1--><td class="alkali-metals" data-tooltip="Lithium [Li] Atomic number 3">Li</td>
+				<!--2--><td class="alkaline-earth-metals" data-tooltip="Beryllium [Be] Atomic number 4">Be</td>
+				<!--3--><td> </td>
+				<!--4--><td> </td>
+				<!--5--><td> </td>
+				<!--6--><td> </td>
+				<!--7--><td> </td>
+                <!--8--><td> </td>
+                <!--9--><td> </td>
+                <!--10--><td> </td>
+                <!--11--><td> </td>
+                <!--12--><td> </td>
+                <!--13--><td class="metalloids" data-tooltip="Boron [B] Atomic number 5">B</td>
+                <!--14--><td class="nonmetals" data-tooltip="Carbon [C] Atomic number 6">C</td>
+                <!--15--><td class="nonmetals" data-tooltip="Nitrogen [N] Atomic number 7">N</td>
+                <!--16--><td class="nonmetals" data-tooltip="Oxygen [O] Atomic number 8">O</td>
+                <!--17--><td class="halogens" data-tooltip="Fluorine [F] Atomic number 9">F</td>
+                <!--18--><td class="noble-gases" data-tooltip="Neon [Ne] Atomic number 10">Ne</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <!--1--><td class="alkali-metals" data-tooltip="Sodium [Na] Atomic number 11">Na</td>
+				<!--2--><td class="alkaline-earth-metals" data-tooltip="Magnesium [Mg] Atomic number 12">Mg</td>
+				<!--3--><td></td>
+				<!--4--><td></td>
+				<!--5--><td></td>
+				<!--6--><td></td>
+				<!--7--><td></td>
+                <!--8--><td></td>
+                <!--9--><td></td>
+                <!--10--><td></td>
+                <!--11--><td></td>
+                <!--12--><td></td>
+                <!--13--><td class="post-transition-metals" data-tooltip="Aluminium [Al] Atomic number 13">Al</td>
+                <!--14--><td class="metalloids" data-tooltip="Silicon [Si] Atomic number 14">Si</td>
+                <!--15--><td class="nonmetals" data-tooltip="Phosphorus [P] Atomic number 15">P</td>
+                <!--16--><td class="nonmetals" data-tooltip="Sulfur [S] Atomic number 16">S</td>
+                <!--17--><td class="halogens" data-tooltip="Chlorine [Cl] Atomic number 17">cl</td>
+                <!--18--><td class="noble-gases" data-tooltip="Argon [Ar] Atomic number 18">Ar</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<!--1--><td class="alkali-metals" data-tooltip="Potassium [K] Atomic number 19">K</td>
+				<!--2--><td class="alkaline-earth-metals" data-tooltip="Calcium [Ca] Atomic number 20">Ca</td>
+				<!--3--><td class="transition-metals" data-tooltip="Scandium [Sc] Atomic number 21">Sc</td>
+				<!--4--><td class="transition-metals" data-tooltip="Titanium [Ti] Atomic number 22">Ti</td>
+				<!--5--><td class="transition-metals" data-tooltip="Vanadium [V] Atomic number 23">V</td>
+				<!--6--><td class="transition-metals" data-tooltip="Chromium [Cr] Atomic number 24">Cr</td>
+				<!--7--><td class="transition-metals" data-tooltip="Manganese [Mn] Atomic number 25">Mn</td>
+                <!--8--><td class="transition-metals" data-tooltip="Iron [Fe] Atomic number 26">Fe</td>
+                <!--9--><td class="transition-metals" data-tooltip="Cobalt [Co] Atomic number 27">Co</td>
+                <!--10--><td class="transition-metals" data-tooltip="Nickel [Ni] Atomic number 28">Ni</td>
+                <!--11--><td class="transition-metals" data-tooltip="Copper [Cu] Atomic number 29">Cu</td>
+                <!--12--><td class="transition-metals" data-tooltip="Zinc [Zn] Atomic number 30">Zn</td>
+                <!--13--><td class="post-transition-metals" data-tooltip="Gallium [Ga] Atomic number 31">Ga</td>
+                <!--14--><td class="metalloids" data-tooltip="Germanium [Ge] Atomic number 32">Ge</td>
+                <!--15--><td class="metalloids" data-tooltip="Arsenic [As] Atomic number 33">As</td>
+                <!--16--><td class="nonmetals" data-tooltip="Selenium [Se] Atomic number 34">Se</td>
+				<!--17--><td class="halogens" data-tooltip="Bromine [Br] Atomic number 35">Br</td>
+				<!--18--><td class="noble-gases" data-tooltip="Krypton [Kr] Atomic number 36">Kr</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td class="alkali-metals" data-tooltip="Rubidium [Rb] Atomic number 37">Rb</td>
+				<td class="alkaline-earth-metals" data-tooltip="Strontium [Sr] Atomic number 38">Sr</td>
+				<td class="transition-metals" data-tooltip="Yttrium [Y] Atomic number 39">Y</td>
+				<td class="transition-metals" data-tooltip="Zirconium [Zr] Atomic number 40">Zr</td>
+				<td class="transition-metals" data-tooltip="Niobium [Nb] Atomic number 41">Nb</td>
+				<td class="transition-metals" data-tooltip="Molybdenum [Mo] Atomic number 42">Mo</td>
+				<td class="transition-metals" data-tooltip="Technetium [Tc] Atomic number 43">Tc</td>
+				<td class="transition-metals" data-tooltip="Ruthenium [Ru] Atomic number 44">Ru</td>
+				<td class="transition-metals" data-tooltip="Rhodium [Rh] Atomic number 45">Rh</td>
+				<td class="transition-metals" data-tooltip="Palladium [Pd] Atomic number 46">Pd</td>
+				<td class="transition-metals" data-tooltip="Silver [Ag] Atomic number 47">Ag</td>
+				<td class="transition-metals" data-tooltip="Cadmium [Cd] Atomic number 48">Cd</td>
+				<td class="post-transition-metals" data-tooltip="Indium [In] Atomic number 49">In</td>
+				<td class="post-transition-metals" data-tooltip="Tin [Sn] Atomic number 50">Sn</td>
+				<td class="metalloids" data-tooltip="Antimony [Sb] Atomic number 51">Sb</td>
+				<td class="nonmetals" data-tooltip="Tellurium [Te] Atomic number 52">Te</td>
+				<td class="halogens" data-tooltip="Iodine [I] Atomic number 53">I</td>
+				<td class="noble-gases" data-tooltip="Xenon [Xe] Atomic number 54">Xe</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <!--1--><td class="alkali-metals" data-tooltip="Cesium [Cs] Atomic number 55">Cs</td>
+				<!--2--><td class="alkaline-earth-metals" data-tooltip="Barium [Ba] Atomic number 56">Ba</td>
+				<!--3--><td class="lanthanides" data-tooltip="Lanthanum [La] Atomic number 57">La*</td>
+				<!--4--><td class="transition-metals" data-tooltip="Hafnium [Hf] Atomic number 72">Hf</td>
+				<!--5--><td class="transition-metals" data-tooltip="Tantalum [Ta] Atomic number 73">Ta</td>
+                <!--6--><td class="transition-metals" data-tooltip="Tungsten [W] Atomic number 74">W</td>
+                <!--7--><td class="transition-metals" data-tooltip="Rhenium [Re] Atomic number 75">Re</td>
+                <!--8--><td class="transition-metals" data-tooltip="Osmium [Os] Atomic number 76">Os</td>
+                <!--9--><td class="transition-metals" data-tooltip="Iridium [Ir] Atomic number 77">Ir</td>
+                <!--10--><td class="transition-metals" data-tooltip="Platinum [Pt] Atomic number 78">Pt</td>
+                <!--11--><td class="transition-metals" data-tooltip="Gold [Au] Atomic number 79">Au</td>
+                <!--12--><td class="transition-metals" data-tooltip="Mercury [Hg] Atomic number 80">Hg</td>
+                <!--13--><td class="post-transition-metals" data-tooltip="Thallium [Tl] Atomic number 81">Tl</td>
+                <!--14--><td class="post-transition-metals" data-tooltip="Lead [Pb] Atomic number 82">Pb</td>
+                <!--15--><td class="post-transition-metals" data-tooltip="Bismuth [Bi] Atomic number 83">Bi</td>
+                <!--16--><td class="metalloids" data-tooltip="Polonium [Po] Atomic number 84">Po</td>
+                <!--17--><td class="halogens" data-tooltip="Astatine [At] Atomic number 85"><a href="https://en.wikipedia.org/wiki/Astatine">At</a></td>
+                <!--18--><td class="noble-gases" data-tooltip="Radon [Rn] Atomic number86"><a href="https://en.wikipedia.org/wiki/Radon" target="_blank">Rn</a></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <!--1--><td class="alkali-metals" data-tooltip="Francium [Fr] Atomic number 87">Fr</td>
+				<!--2--><td class="alkaline-earth-metals" data-tooltip="Radium [Ra] Atomic number 88">Ra</td>
+				<!--3--><td class="actinides" data-tooltip="Actinium [Ac] Atomic number 89">Ac*</td>
+				<!--4--><td class="transition-metals" data-tooltip="Rutherfordium [Rf] Atomic number 104">Rf</td>
+            	<!--5--><td class="transition-metals" data-tooltip="Dubnium [Db] Atomic number 105">Db</td>
+            	<!--6--><td class="transition-metals" data-tooltip="Seaborgium [Sg] Atomic number 106">Sg</td>
+            	<!--7--><td class="transition-metals" data-tooltip="Bohrium [Bh] Atomic number 107">Bh</td>
+            	<!--8--><td class="transition-metals" data-tooltip="Hassium [Hs] Atomic number 108">Hs</td>
+            	<!--9--><td class="transition-metals" data-tooltip="Meitnerium [Mt]Atomic number 109">Mt</td>
+            	<!--10--><td class="transition-metals" data-tooltip="Darmstadtium [Ds] Atomic number 110">Ds</td>
+            	<!--11--><td class="transition-metals" data-tooltip="Roentgenium [Rg] Atomic number 111">Rg</td>
+            	<!--12--><td class="transition-metals" data-tooltip="Copernicium [Cn] Atomic number 112">Cn</td>
+            	<!--13--><td class="post-transition-metals" data-tooltip="Nihonium [Nh] Atomic number 113">Nh</td>
+            	<!--14--><td class="post-transition-metals" data-tooltip="Flerovium [Fl] Atomic number 114">Fl</td>
+            	<!--15--><td class="post-transition-metals" data-tooltip="Moscovium [Mc] Atomic number 115">Mc</td>
+            	<!--16--><td class="post-transition-metals" data-tooltip="Livermorium [Lv] Atomic number 116">Lv</td>
+                <!--17--><td class="halogens" data-tooltip="Tennessine [Ts] Atomic number 117">Ts</td>
+                <!--18--><td class="noble-gases" data-tooltip="Oganesson [Og] Atomic number 118">Og</td>
+            </tr>
+        </tbody>
+    </table>
+	</div>
+	<br><br><br>
+	<div>
+		<table>
+			<tbody>
+				<tr>
+					<td>6</td>
+					<td class="lanthanides" data-tooltip="Lanthanum [La] Atomic number 57">La*</td>
+				<td class="lanthanides" data-tooltip="Cerium [Ce] Atomic number 58">Ce</td>
+				<td class="lanthanides" data-tooltip="Praseodymium [Pr] Atomic number 59">Pr</td>
+                <td class="lanthanides" data-tooltip="Neodymium [Nd] Atomic number 60">Nd</td>
+                <td class="lanthanides" data-tooltip="Promethium [Pm] Atomic number 61">Pm</td>
+                <td class="lanthanides" data-tooltip="Samarium [Sm] Atomic number 62">Sm</td>
+                <td class="lanthanides" data-tooltip="Europium [Eu] Atomic number 63">Eu</td>
+                <td class="lanthanides" data-tooltip="Gadolinium [Gd] Atomic number 64">Gd</td>
+                <td class="lanthanides" data-tooltip="Terbium [Tb] Atomic number 65">Tb</td>
+                <td class="lanthanides" data-tooltip="Dysprosium [Dy] Atomic number 66">Dy</td>
+                <td class="lanthanides" data-tooltip="Holmium [Ho] Atomic number 67">Ho</td>
+                <td class="lanthanides" data-tooltip="Erbium [Er] Atomic number 68">Er</td>
+                <td class="lanthanides" data-tooltip="Thulium [Tm] Atomic number 69">Tm</td>
+                <td class="lanthanides" data-tooltip="Ytterbium [Yb] Atomic number 70">Yb</td>
+                <td class="lanthanides" data-tooltip="Lutetium [Lu] Atomic number 71">Lu</td>
+				<tr>
+					<td>7</td>
+					<td class="actinides" data-tooltip="Actinium [Ac] Atomic number 89">Ac</td>
+					<td class="actinides" data-tooltip="Thorium [Th] Atomic number 90">Th</td>
+					<td class="actinides" data-tooltip="Protactinium [Pa] Atomic number 91">Pa</td>
+					<td class="actinides" data-tooltip="Uranium [U]Atomic number 92">U</td>
+					<td class="actinides" data-tooltip="Neptunium [Np]Atomic number 93">Np</td>
+					<td class="actinides" data-tooltip="Plutonium [Pu] Atomic number 94">Pu</td>
+					<td class="actinides" data-tooltip="Americium[Am] Atomic number 95">Am</td>
+					<td class="actinides" data-tooltip="Curium [Cm] Atomic number 96">Cm</td>
+					<td class="actinides" data-tooltip="Berkelium [Bk] Atomic number 97">Bk</td>
+					<td class="actinides" data-tooltip="Californium [Cf] Atomic number 98">Cf</td>
+					<td class="actinides" data-tooltip="Einsteinium [Es] Atomic number 99">Es</td>
+					<td class="actinides" data-tooltip="Fermium [Fm] Atomic number 100">Fm</td>
+					<td class="actinides" data-tooltip="Mendelevium [Md] Atomic number 101">Md</td>
+					<td class="actinides" data-tooltip="Nobelium [No] Atomic number 102">No</td>
+					<td class="actinides" data-tooltip="Lawrencium [Lr] Atomic number 103">Lr</td>
+				</tr>
+			</tbody>
+		</table>
+		<footer>
+			<p style="color: #c2b2b2;">created by <strong>GLUON</strong></p></footer>
+	</div>
+</body>
+</html>    

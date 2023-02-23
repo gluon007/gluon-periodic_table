@@ -5,90 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Periodic Table</title>
-	<style>
-        body {
-            background-color: #0f0f0f;
-            border-left-color: #cd78e7;
-			text-decoration: white;
-            font-family: 'Courier New', Courier, monospace;
-			
-		} 
-		table {
-			color: #c2b2b2;
-			margin: 0 auto;
-			font-size: 1.2em;
-			width: 10%;
-			max-width: 1000px;
-			text-align: center;
-		}
-		td {
-			border: 0px solid #ccc;
-			padding: 10px;
-			position: relative;
-            border-radius: 10px;
-		}
-		td:hover::before {
-			content: attr(data-tooltip);
-			position: absolute;
-			bottom: 100%;
-			left: 50%;
-			transform: translateX(-50%);
-			padding: 10px;
-			background: rgba(0, 0, 0, 0.726);
-			color: #fff;
-			border-radius: 4px;
-			white-space: pre-wrap;
-			z-index: 1;
-		}
-		.alkali-metals, .alkaline-earth-metals, .transition-metals, .other-metals, .metalloids, .nonmetals, .halogens, .noble-gases, .lanthanides, .actinides, .post-transition-metals {
-			background-color: #f1f1f1;
-			font-weight: bold;
-			color: #070606;
-		}
-		.alkali-metals {
-			background-color: #2d9b49;
-		}
-		.alkaline-earth-metals {
-			background-color: #23e91c;
-		}
-		.transition-metals {
-			background-color: #e6af51bb;
-		}
-		.metalloids {
-			background-color: #413ed4;
-		}
-		.nonmetals {
-			background-color: #d17c7c;
-		}
-		.halogens {
-			background-color: #c93434;
-		}
-		.noble-gases {
-			background-color: #7bbcfd;
-		}
-		.post-transition-metals{
-			background-color: rgb(248, 143, 68);
-		}
-		.lanthanides{
-			background-color: #a56e4e;
-		}
-		.actinides {
-			background-color: #c45555;
-		}
-		.empty {
-			background-color: #fff;
-			border: none;
-		}
-		a{
-			color:#070606;
-		}
-	</style>
+	<link rel="stylesheet" href="ptstyle.css">
 </head>
 <body>
-    <div style="height:50px; background-color: #cd78e7; border-radius:30px; text-align: center; width: 90%; margin:0 auto;">
+    <div class="heading">
         <h1><u>PERIODIC TABLE</u></h1>
     </div>
-    <div style="color: #ffffff; background-color: #32323b; border-radius: 30px; height:20px; width: 75%; margin:0 auto;"><nav></nav></div>
+    <div class="navigator"><nav></nav></div>
 	<div>
 	<table>
 		<thead>
@@ -117,7 +40,7 @@
 		<tbody>
 			<tr>
 				<td>1</td>
-				<td class="nonmetals" data-tooltip="Hydrogen [H] Atomic number 1">H</td>
+				<td class="nonmetals" data-tooltip="Hydrogen [H] Atomic number 1">H<sup>1</sup></td>
 				<td> </td>
 				<td> </td>
 				<td> </td>
@@ -134,12 +57,12 @@
                 <td> </td>
                 <td> </td>
                 <td> </td>
-                <td class="noble-gases" data-tooltip="Helium [He] Atomic number 2">He</td>
+                <td class="noble-gases" data-tooltip="Helium [He] Atomic number 2">He<sup>2</sup></td>
             </tr>
             <tr>
                 <td>2</td>
-				<!--1--><td class="alkali-metals" data-tooltip="Lithium [Li] Atomic number 3">Li</td>
-				<!--2--><td class="alkaline-earth-metals" data-tooltip="Beryllium [Be] Atomic number 4">Be</td>
+				<!--1--><td class="alkali-metals" data-tooltip="Lithium [Li] Atomic number 3">Li<sup>3</sup></td>
+				<!--2--><td class="alkaline-earth-metals" data-tooltip="Beryllium [Be] Atomic number 4">Be<sup>4</sup></td>
 				<!--3--><td> </td>
 				<!--4--><td> </td>
 				<!--5--><td> </td>
@@ -150,12 +73,12 @@
                 <!--10--><td> </td>
                 <!--11--><td> </td>
                 <!--12--><td> </td>
-                <!--13--><td class="metalloids" data-tooltip="Boron [B] Atomic number 5">B</td>
-                <!--14--><td class="nonmetals" data-tooltip="Carbon [C] Atomic number 6">C</td>
-                <!--15--><td class="nonmetals" data-tooltip="Nitrogen [N] Atomic number 7">N</td>
-                <!--16--><td class="nonmetals" data-tooltip="Oxygen [O] Atomic number 8">O</td>
-                <!--17--><td class="halogens" data-tooltip="Fluorine [F] Atomic number 9">F</td>
-                <!--18--><td class="noble-gases" data-tooltip="Neon [Ne] Atomic number 10">Ne</td>
+                <!--13--><td class="metalloids" data-tooltip="Boron [B] Atomic number 5">B<sup>5</sup></td>
+                <!--14--><td class="nonmetals" data-tooltip="Carbon [C] Atomic number 6">C<sup>6</sup></td>
+                <!--15--><td class="nonmetals" data-tooltip="Nitrogen [N] Atomic number 7">N<sup>7</sup></td>
+                <!--16--><td class="nonmetals" data-tooltip="Oxygen [O] Atomic number 8">O<sup>8</sup></td>
+                <!--17--><td class="halogens" data-tooltip="Fluorine [F] Atomic number 9">F<sup>9</sup></td>
+                <!--18--><td class="noble-gases" data-tooltip="Neon [Ne] Atomic number 10">Ne<sup>10</sup></td>
             </tr>
             <tr>
                 <td>3</td>
@@ -288,7 +211,7 @@
                 <td class="lanthanides" data-tooltip="Lutetium [Lu] Atomic number 71">Lu</td>
 				<tr>
 					<td>7</td>
-					<td class="actinides" data-tooltip="Actinium [Ac] Atomic number 89">Ac</td>
+					<td class="actinides" data-tooltip="Actinium [Ac] Atomic number 89">Ac*</td>
 					<td class="actinides" data-tooltip="Thorium [Th] Atomic number 90">Th</td>
 					<td class="actinides" data-tooltip="Protactinium [Pa] Atomic number 91">Pa</td>
 					<td class="actinides" data-tooltip="Uranium [U]Atomic number 92">U</td>
@@ -307,7 +230,7 @@
 			</tbody>
 		</table>
 		<footer>
-			<p style="color: #c2b2b2;">created by <strong>GLUON</strong></p></footer>
+			<p class="footer">created by <strong>GLUON</strong></p></footer>
 	</div>
 </body>
 </html>    

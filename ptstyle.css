@@ -1,0 +1,97 @@
+body {
+    background-color: #0f0f0f;
+    border-left-color: #cd78e7;
+    text-decoration: white;
+    font-family: 'Courier New', Courier, monospace;
+    
+} 
+table {
+    color: #c2b2b2;
+    margin: 0 auto;
+    font-size: 1.2em;
+    width: 10%;
+    max-width: 1000px;
+    text-align: center;
+}
+td {
+    border: 0px solid #ccc;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+}
+td:hover::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.726);
+    color: #fff;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    z-index: 1;
+}
+.alkali-metals, .alkaline-earth-metals, .transition-metals, .other-metals, .metalloids, .nonmetals, .halogens, .noble-gases, .lanthanides, .actinides, .post-transition-metals {
+    background-color: #f1f1f1;
+    font-weight: bold;
+    color: #070606;
+}
+.alkali-metals {
+    background-color: #2d9b49;
+}
+.alkaline-earth-metals {
+    background-color: #23e91c;
+}
+.transition-metals {
+    background-color: #e6af51bb;
+}
+.metalloids {
+    background-color: #413ed4;
+}
+.nonmetals {
+    background-color: #d17c7c;
+}
+.halogens {
+    background-color: #c93434;
+}
+.noble-gases {
+    background-color: #7bbcfd;
+}
+.post-transition-metals{
+    background-color: rgb(248, 143, 68);
+}
+.lanthanides{
+    background-color: #a56e4e;
+}
+.actinides {
+    background-color: #c45555;
+}
+.empty {
+    background-color: #fff;
+    border: none;
+}
+a{
+    color:#070606;
+}
+.heading{
+    width: auto;
+    height: auto;
+    background-color: #cd78e7; 
+    border-radius:30px; 
+    text-align: center; 
+    margin:0 auto;
+    padding: auto;
+}
+.navigator{
+    color: #ffffff; 
+    background-color: #32323b; 
+    border-radius: 30px; 
+    height:20px; 
+    width: 75%; 
+    margin:0 auto;
+}
+.footer{
+    color: #c2b2b2;
+    text-align-last: right;
+}
